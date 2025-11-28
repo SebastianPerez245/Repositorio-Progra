@@ -1,0 +1,14 @@
+11. Función SubCadena
+#include <iostream>
+#include <string>
+using namespace std;
+
+string SubCadena(string s,int p,int n){
+    return s.substr(p,n);
+}
+
+int main(){
+    string cad="hoooola";
+    cout << SubCadena(cad,5,3);
+    return 0;
+}
