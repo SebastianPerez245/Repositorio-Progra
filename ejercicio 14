@@ -1,0 +1,21 @@
+14. Codificar usando desplazamiento ASCII
+#include <iostream>
+#include <string>
+using namespace std;
+
+string Codifica(string s,int n){
+    string r="";
+    for(char c:s){
+        if(c>='a'&&c<='z')
+            r+= 'a' + (c-'a'+n)%26;
+        else if(c>='A'&&c<='Z')
+            r+= 'A' + (c-'A'+n)%26;
+        else r+=c;
+    }
+    return r;
+}
+
+int main(){
+    cout << Codifica("hola, mundo",3);
+    return 0;
+}
