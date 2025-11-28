@@ -1,0 +1,15 @@
+13. Buscar SubCadena
+#include <iostream>
+#include <string>
+using namespace std;
+
+int BuscarSubCadena(string a,string b){
+    int pos=b.find(a);
+    return (pos!=-string::npos)?pos:-1;
+}
+
+int main(){
+    string b="hooola",a="oool";
+    cout << BuscarSubCadena(a,b);
+    return 0;
+}
