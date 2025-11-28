@@ -1,0 +1,20 @@
+15. Comprobar si cadena es palíndromo
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool EsPalindromo(string s){
+    string r="";
+    for(int i=s.size()-1;i>=0;i--)
+        r+=s[i];
+
+    return (s==r);
+}
+
+int main(){
+    string palabra;
+    cin >> palabra;
+
+    cout << (EsPalindromo(palabra)?"true":"false");
+    return 0;
+}
