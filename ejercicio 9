@@ -1,0 +1,19 @@
+9. Intersección de conjuntos (caracteres)
+#include <iostream>
+#include <set>
+using namespace std;
+
+int main(){
+    set<char>A={'k','b','c','a','I','t','e','q','p'};
+    set<char>B={'a','m','g','p','I','h','k','n'};
+    set<char>C;
+
+    for(char x:A)
+        if(B.count(x)) C.insert(x);
+
+    cout << "C = { ";
+    for(char x:C) cout << x << " ";
+    cout << "}";
+
+    return 0;
+}
