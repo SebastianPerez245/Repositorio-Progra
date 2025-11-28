@@ -1,0 +1,19 @@
+4. Invertir cadena (capicúa posible)
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string palabra,invertida="";
+    cin >> palabra;
+
+    for(int i = palabra.size()-1; i>=0; i--)
+        invertida += palabra[i];
+
+    cout << "Invertida: " << invertida << endl;
+
+    if(palabra == invertida) cout << "Es capicua";
+    else cout << "No es capicua";
+
+    return 0;
+}
